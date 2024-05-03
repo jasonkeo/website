@@ -1,26 +1,42 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
 
-function App() {
+import Left from './Left';
+import { Right } from './Right';
+
+
+import './index.css';
+
+import './script.js'; 
+
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <main>
+
+
+
+
+      <div id="content">
+
+        <Left></Left>
+        <Right></Right>
+
+        
+
+
+      </div>
+
+
+      <div className="footer">
+    
+        
+         Made by Jason Keo. All rights reserved. © <a href="https://github.com/jasonkeo/website">Source Code</a>
+         
+      </div>
+    </main>
+
+    
+
   );
 }
 
-export default App;
+
