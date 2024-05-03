@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/http//:jasonkeo.github.io/websites/static/css/main.539a1eb5.css",
-    "main.js": "/http//:jasonkeo.github.io/websites/static/js/main.2807a39d.js",
-    "static/js/453.ed3810f9.chunk.js": "/http//:jasonkeo.github.io/websites/static/js/453.ed3810f9.chunk.js",
-    "index.html": "/http//:jasonkeo.github.io/websites/index.html",
-    "main.539a1eb5.css.map": "/http//:jasonkeo.github.io/websites/static/css/main.539a1eb5.css.map",
-    "main.2807a39d.js.map": "/http//:jasonkeo.github.io/websites/static/js/main.2807a39d.js.map",
-    "453.ed3810f9.chunk.js.map": "/http//:jasonkeo.github.io/websites/static/js/453.ed3810f9.chunk.js.map"
+    "main.css": "/websites/static/css/main.539a1eb5.css",
+    "main.js": "/websites/static/js/main.a0bbe8f2.js",
+    "static/js/453.ed3810f9.chunk.js": "/websites/static/js/453.ed3810f9.chunk.js",
+    "index.html": "/websites/index.html",
+    "main.539a1eb5.css.map": "/websites/static/css/main.539a1eb5.css.map",
+    "main.a0bbe8f2.js.map": "/websites/static/js/main.a0bbe8f2.js.map",
+    "453.ed3810f9.chunk.js.map": "/websites/static/js/453.ed3810f9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.539a1eb5.css",
-    "static/js/main.2807a39d.js"
+    "static/js/main.a0bbe8f2.js"
   ]
 }
