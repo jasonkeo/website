@@ -47,7 +47,7 @@ export default function Left() {
             <td><p>Python</p></td>
             <td><p>HTML</p></td>
             <td><p>CSS</p></td>
-
+           
           </tr>
         </table>
       </div>

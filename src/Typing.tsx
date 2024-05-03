@@ -24,7 +24,7 @@ function Typing() {
   return (
     <div>
       {text}
-      <span className={cursor ? 'cursor' : ''}></span>
+      <span className={cursor ? 'cursor' : ''}>|</span>
     </div>
   );
 }
