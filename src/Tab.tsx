@@ -122,7 +122,7 @@ export default function Tabs() {
               <a href="" target="_blank">
                 <h3>Winter Project 2024 (Co-Exist)</h3>
               </a>
-              <h4></h4>
+              <h4>06/2024-07/2024</h4>
             </div>
             <div id="edbot">
               <img src="location.png" />
