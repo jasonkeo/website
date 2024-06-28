@@ -51,6 +51,7 @@ export default function Left() {
           <div><p>CSS</p></div>
           <div><p>Javascript</p></div>
           <div><p>React</p></div>
+          <div><p>Django</p></div>
         </div>
      
 

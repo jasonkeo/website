@@ -72,7 +72,7 @@ export default function Tabs() {
               <a href="https://tang.com.au/" target="_blank">
                 <h3>Tang Technology</h3>
               </a>
-              <h4>06/2024-Present</h4>
+              <h4>05/2024-Present</h4>
             </div>
             <div id="edbot">
               <img src="location.png" />
@@ -115,7 +115,27 @@ export default function Tabs() {
       {activeTab === 'projects' && (
         <div id="projects">
           <h1 className="padding">Projects</h1>
-          
+          <div id="experience">
+          <div>
+            <img src="https://i.ibb.co/Np6VBHh/dwa.jpg" />
+            <div id="edtop">
+              <a href="" target="_blank">
+                <h3>Winter Project 2024 (Co-Exist)</h3>
+              </a>
+              <h4></h4>
+            </div>
+            <div id="edbot">
+              <img src="location.png" />
+              <h4>Perth</h4>
+              <img src="suitcase.png" />
+              <h4>Volunteer Developer</h4>
+            </div>
+            <ul>
+              
+
+            </ul>
+            </div>
+          </div>
           <p>
             <a href="https://cassa.au" target="_blank">
               <h3 className="padding">➜ CASSA website revamp</h3>
@@ -141,14 +161,7 @@ export default function Tabs() {
             </ul>
           </p>
 
-          <p>
-            <a href="https://jasonkeo.github.io/signup_email" target="_blank">
-              <h3 className="padding">➜ CASSA Email Signup</h3>
-            </a>
-            <ul>
-              <li>styled html email sent to new members of club.</li>
-            </ul>
-          </p>
+          
 
 
         </div>
