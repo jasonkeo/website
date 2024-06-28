@@ -65,12 +65,34 @@ export default function Tabs() {
           <div id="experience">
             <h1>Experience</h1>
             <div>
+
+            <div>
+            <img src="https://i0.wp.com/tang.com.au/wp-content/uploads/2024/02/Website-logo-512-x-512.jpg?fit=512%2C512&ssl=1" />
+            <div id="edtop">
+              <a href="https://tang.com.au/" target="_blank">
+                <h3>Tang Technology</h3>
+              </a>
+              <h4>06/2024-Present</h4>
+            </div>
+            <div id="edbot">
+              <img src="location.png" />
+              <h4>Perth</h4>
+              <img src="suitcase.png" />
+              <h4>IT Intern</h4>
+            </div>
+            <ul>
+              <li><p> Helped troubleshoot computer problems and assist in the installation and configuration of computers.</p></li>
+
+            </ul>
+            </div>
+
+
               <img src="https://clubs.ecuguild.org.au/wp-content/uploads/2023/08/LOGO_Con_2-2.png" />
               <div id="edtop">
-                <a href="https://www.ecu.edu.au/degrees/courses/bachelor-of-computer-science">
+                <a href="https://cassa.au" target="_blank">
                   <h3>Computer and Security Student Association</h3>
                 </a>
-                <h4>2024-Present</h4>
+                <h4>02/2024-Present</h4>
               </div>
               <div id="edbot">
                 <img src="location.png" />
@@ -78,46 +100,61 @@ export default function Tabs() {
                 <img src="suitcase.png" />
                 <h4>Comittee member</h4>
               </div>
-              <p>Contributed to the club by making and designing posters as well helping with web dev</p>
+              <ul>
+                <li><p>Contributed to the club by making and designing posters as well helping with web dev</p></li>
+              </ul>
             </div>
-          </div>
-        )}
+          
 
-        {activeTab === 'projects' && (
-          <div id="projects">
-            <h1 className="padding">Projects</h1>
-            <p>
-              <a href="https://github.com/jasonkeo/signup_email" target="_blank">
-                <h3 className="padding">Club Email Signup</h3>
-              </a>
-              <ul>
-                <li>html email sent to new members of club.</li>
-              </ul>
-            </p>
-
-            <p>
-              <a href="https://github.com/jasonkeo/CASSA" target="_blank">
-                <h3 className="padding">CASSA theme</h3>
-              </a>
-              <ul>
-                <li>added new features to club website</li>
-              </ul>
-            </p>
             
-            <p>
-              <a href="https://showcase-cyan-six.vercel.app" target="_blank">
-                <h3 className="padding">Club website (in progress)</h3>
-              </a>
-              <ul>
-                <li>hypothetical website for uni club made with typescript and tailwind css for practice</li>
-              </ul>
-            </p>
+            </div>
 
-           
-          </div>
+
         )}
-      </div>
+
+      {activeTab === 'projects' && (
+        <div id="projects">
+          <h1 className="padding">Projects</h1>
+          
+          <p>
+            <a href="https://cassa.au" target="_blank">
+              <h3 className="padding">➜ CASSA website revamp</h3>
+            </a>
+            <ul>
+              <li>improved club website by adding new content using html and css
+              
+              <ul><li>new about us, sponsors and join our comittee sections on homepage</li>
+              <li>discord and join membership buttons</li>
+              <li>undlerline hover effect on tabs</li>
+              </ul>
+              </li>
+
+            </ul>
+          </p>
+
+          <p>
+            <a href="https://showcase-cyan-six.vercel.app" target="_blank">
+              <h3 className="padding">➜ Murdoch badminton club website</h3>
+            </a>
+            <ul>
+              <li>hypothetical website for uni club made with typescript and tailwind css for practice</li>
+            </ul>
+          </p>
+
+          <p>
+            <a href="https://jasonkeo.github.io/signup_email" target="_blank">
+              <h3 className="padding">➜ CASSA Email Signup</h3>
+            </a>
+            <ul>
+              <li>styled html email sent to new members of club.</li>
+            </ul>
+          </p>
+
+
+        </div>
+      )}
     </div>
+    </div >
   );
 }
 

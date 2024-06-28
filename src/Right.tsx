@@ -14,9 +14,9 @@ export function Right() {
 
                 <div className="about-img">
                 
-                <a href="https://www.linkedin.com/in/jason-keo-0b33ba224/"><img src="linkedin.png" /></a>
-                <a href="https://instagram.com/jpanda0/"><img src="instagram.png" /></a>
-                <a href="https://github.com/jasonkeo/"><img src="github.png" /></a>
+                <a target="_blank" href="https://www.linkedin.com/in/jason-keo-0b33ba224/"><img src="linkedin.png" /></a>
+                <a target="_blank" href="https://instagram.com/jpanda0/"><img src="instagram.png" /></a>
+                <a target="_blank" href="https://github.com/jasonkeo/"><img src="github.png" /></a>
                 
 
                 <a href="mailto:jasonkeo047@gmail.com"><img src="mail.png" /></a>
@@ -43,7 +43,7 @@ export function Right() {
 
                     <div id="edtop">
                         <h3> ECU (Bachelors of Computer Science)</h3>
-                        <h4>2024-2026</h4>
+                        <h4>02/2024-2026</h4>
                     </div>
 
 

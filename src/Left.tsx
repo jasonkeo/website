@@ -2,14 +2,16 @@ import React from 'react';
 import Typing from './Typing';
 
 export default function Left() {
+ 
+  
   return (
     <div className="left">
       <div className="profile round">
         <div id="top-prof">
-          <img src="Capture.JPG" alt="Profile Picture" />
+          <img src="Capture.JPG" alt="" />
         </div>
 
-        <div id="bottom-prof" className="round">
+        <div id="bottom-prof">
 
           <div id="inner">
             <h1 id="myText"><Typing></Typing></h1>
@@ -41,15 +43,18 @@ export default function Left() {
 
       <div id="skills" className="round padding">
         <h1>Skills</h1>
-        <table>
-          <tr>
 
-            <td><p>Python</p></td>
-            <td><p>HTML</p></td>
-            <td><p>CSS</p></td>
-           
-          </tr>
-        </table>
+        <div className="skills-grid">
+        
+          <div><p>Python</p></div>
+          <div><p>HTML</p></div>
+          <div><p>CSS</p></div>
+          <div><p>Javascript</p></div>
+          <div><p>React</p></div>
+        </div>
+     
+
+
       </div>
 
     </div>
