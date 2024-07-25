@@ -73,7 +73,7 @@ export default function Tabs() {
               <a href="https://tang.com.au/" target="_blank">
                 <h3>Tang Technology</h3>
               </a>
-              <h4>05/2024-Present</h4>
+              <h4>05/2024-07/2024</h4>
             </div>
             <div id="edbot">
               <img src="location.png" />
