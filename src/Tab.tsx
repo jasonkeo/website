@@ -33,6 +33,7 @@ function Test() {
 export default Test; */
 
 import React, { useState } from 'react';
+import { text } from 'stream/consumers';
 
 export default function Tabs() {
   const [activeTab, setActiveTab] = useState('experience');
@@ -119,8 +120,8 @@ export default function Tabs() {
           <div>
             <img src="https://i.ibb.co/Np6VBHh/dwa.jpg" />
             <div id="edtop">
-              <a href="" target="_blank">
-                <h3>Winter Project 2024 (Co-Exist)</h3>
+              <a href="https://codersforcauses.org/" target="_blank">
+                <h3>Coders for Causes – Winter project 2024 (Full stack)</h3>
               </a>
               <h4></h4>
             </div>
@@ -131,14 +132,40 @@ export default function Tabs() {
               <h4>Developer</h4>
             </div>
             <ul>
+  <li>Worked along other uni’s students to develop an event management system for the non-profit org CoExist Australia.</li>
+  <li>Tech used: Django, Next.js</li>
+  <li><a href="https://coexist-events.vercel.app/" target="_blank">https://coexist-events.vercel.app/ </a> - front end preview only</li>
+  <li><a href="https://github.com/codersforcauses/coexist" target="_blank">https://github.com/codersforcauses/coexist</a></li>
+</ul>
+            
+            </div>
+          </div>
+          <p >
+            <a href="https://to-do-lists-eta.vercel.app/" target="_blank">
+              <h3 className="padding" style={{color: 'black'}}>➜ To do list app (Full stack)</h3>
+            </a>
+            <ul>
+              <li>tech used: nextjs. firebase, tailwind css</li>
+              <li><a href="https://github.com/jasonkeo/ToDoList" target="_blank">https://github.com/jasonkeo/ToDoList</a></li>
+              
               
 
             </ul>
-            </div>
-          </div>
-          <p>
+          </p>
+
+          {/* <p>
+            <a href="https://showcase-cyan-six.vercel.app" target="_blank">
+              <h3 className="padding" style={{color: 'black'}}>➜ Murdoch badminton club website (Front-end)</h3>
+            </a>
+            <ul>
+              <li>hypothetical website for uni club made with typescript and tailwind css for practice</li>
+            </ul>
+          </p> */}
+
+
+<p>
             <a href="https://cassa.au" target="_blank">
-              <h3 className="padding">➜ CASSA website revamp</h3>
+              <h3 className="padding" style={{color: 'black'}}>➜ CASSA website revamp (Front-end)</h3>
             </a>
             <ul>
               <li>improved club website by adding new content using html and css
@@ -151,16 +178,6 @@ export default function Tabs() {
 
             </ul>
           </p>
-
-          <p>
-            <a href="https://showcase-cyan-six.vercel.app" target="_blank">
-              <h3 className="padding">➜ Murdoch badminton club website</h3>
-            </a>
-            <ul>
-              <li>hypothetical website for uni club made with typescript and tailwind css for practice</li>
-            </ul>
-          </p>
-
           
 
 
