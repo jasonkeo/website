@@ -15,11 +15,11 @@ export function Right() {
                 <div className="about-img">
                 
                 <a target="_blank" href="https://www.linkedin.com/in/jason-keo-0b33ba224/"><img src="linkedin.png" /></a>
-                <a target="_blank" href="https://instagram.com/jpanda0/"><img src="instagram.png" /></a>
+                <a target="_blank" href="https://www.instagram.com/jasonkeoo/"><img src="instagram.png" /></a>
                 <a target="_blank" href="https://github.com/jasonkeo/"><img src="github.png" /></a>
                 
 
-                <a href="mailto:jasonkeo047@gmail.com"><img src="mail.png" /></a>
+
                 
                 </div>
             </div>

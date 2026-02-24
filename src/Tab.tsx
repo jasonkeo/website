@@ -1,39 +1,8 @@
-/*import React, { useState } from 'react';
-
-const tabs = ['Tab 1', 'Tab 2', 'Tab 3']; // Replace with your actual tabs
-const tabContents = ['Content 1', 'Content 2', 'Content 3']; // Replace with your actual tab contents
-
-function Test() {
-  const [activeTab, setActiveTab] = useState(tabs[0]);
-
-  return (
-    <div>
-      {tabs.map((tab) => (
-        <button
-          key={tab}
-          className={tab === activeTab ? 'active' : ''}
-          onClick={() => setActiveTab(tab)}
-        >
-          {tab}
-        </button>
-      ))}
-
-      {tabs.map((tab, index) => (
-        <div
-          key={tab}
-          className={tab === activeTab ? 'active' : ''}
-        >
-          {tab === activeTab && tabContents[index]}
-        </div>
-      ))}
-    </div>
-  );
-}
-
-export default Test; */
 
 import React, { useState } from 'react';
 import { text } from 'stream/consumers';
+import ExperienceCard from "./Experience";
+import ProjectCard from "./ProjectCard";
 
 export default function Tabs() {
   const [activeTab, setActiveTab] = useState('experience');
@@ -58,132 +27,113 @@ export default function Tabs() {
               Projects
             </button>
           </td>
+          <td>
+            <button id="tab">
+            <a style={{textDecoration: "none", color: "black"}} href="/resume.pdf" download="resume.pdf">
+              Resume
+            </a>
+            </button>
+          </td>
         </tr>
       </table>
 
       <div className="tab-content">
         {activeTab === 'experience' && (
           <div id="experience">
-            <h1>Experience</h1>
-            <div>
-
-            <div>
-            <img src="https://i0.wp.com/tang.com.au/wp-content/uploads/2024/02/Website-logo-512-x-512.jpg?fit=512%2C512&ssl=1" />
-            <div id="edtop">
-              <a href="https://tang.com.au/" target="_blank">
-                <h3>Tang Technology</h3>
-              </a>
-              <h4>05/2024-07/2024</h4>
-            </div>
-            <div id="edbot">
-              <img src="location.png" />
-              <h4>Perth</h4>
-              <img src="suitcase.png" />
-              <h4>IT Intern</h4>
-            </div>
-            <ul>
-              <li><p> Helped troubleshoot computer problems and assist in the installation and configuration of computers.</p></li>
-
-            </ul>
-            </div>
+            <h1>Volunteer / Work Experience</h1>
 
 
-              <img src="https://clubs.ecuguild.org.au/wp-content/uploads/2023/08/LOGO_Con_2-2.png" />
-              <div id="edtop">
-                <a href="https://cassa.au" target="_blank">
-                  <h3>Computer and Security Student Association</h3>
-                </a>
-                <h4>02/2024-Present</h4>
-              </div>
-              <div id="edbot">
-                <img src="location.png" />
-                <h4>Perth</h4>
-                <img src="suitcase.png" />
-                <h4>Comittee member</h4>
-              </div>
-              <ul>
-                <li><p>Contributed to the club by making and designing posters as well helping with web dev</p></li>
-              </ul>
-            </div>
-          
+            <ExperienceCard
+              logo="work here"
+              name="Western Australian University Consultant"
+              link="#"
+              date="Feb 2025 – Dec 2025"
+              location="Perth"
+              role="Student Consultant"
+              description={[
+                "Worked in a team to assist non-profit in communicating their impact for grants by researching possible KPIs to implement.",
+                "Developed a data process map to optimize KPI tracking and presented insights to the director of non-profit, improving decision-making for grant applications.",
+              ]}
+            />
 
-            
-            </div>
+            <ExperienceCard
+              logo="work here"
+              name="Computer and Security Student Association"
+              link="#"
+              date="Feb 2024 – Feb 2025"
+              location="Perth"
+              role="Marketing Coordinator"
+              description={[
+                "Promoted events such as the Start of Semester Social, Industry Connect, and Linux Workshop by designing posters and social media graphics using Canva.",
+                "Helped grow a new Instagram account to over 170+ followers within its first semester.",
+              ]}
+            />
+
+            <ExperienceCard
+              logo="work here"
+              name="After School Teacher – Code Camp"
+              link="#"
+              date="Jul 2024 – Dec 2024"
+              location="Perth"
+              role="After School Teacher"
+              description={[
+                "Taught a class of 25 primary school students how to develop simple games using a block-based coding environment, allowing each student to take a finished game home.",
+                "Explained foundational programming concepts such as variable types while managing classroom behaviour.",
+              ]}
+            />
+
+
+          </div>
 
 
         )}
 
-      {activeTab === 'projects' && (
-        <div id="projects">
-          <h1 className="padding">Projects</h1>
-          <div id="experience">
-          <div>
-            <img src="https://i.ibb.co/Np6VBHh/dwa.jpg" />
-            <div id="edtop">
-              <a href="https://codersforcauses.org/" target="_blank">
-                <h3>Coders for Causes – Winter project 2024 (Full stack)</h3>
-              </a>
-              <h4></h4>
-            </div>
-            <div id="edbot">
-              <img src="location.png" />
-              <h4>Perth</h4>
-              <img src="suitcase.png" />
-              <h4>Developer</h4>
-            </div>
-            <ul>
-  <li>Worked along other uni’s students to develop an event management system for the non-profit org CoExist Australia.</li>
-  <li>Tech used: Django, Next.js</li>
-  <li><a href="https://coexist-events.vercel.app/" target="_blank">https://coexist-events.vercel.app/ </a> - front end preview only</li>
-  <li><a href="https://github.com/codersforcauses/coexist" target="_blank">https://github.com/codersforcauses/coexist</a></li>
-</ul>
-            
+        {activeTab === 'projects' && (
+          <div id="projects">
+            <h1 className="padding">Projects</h1>
+            <div id="experience">
+              <ProjectCard
+                logo="work here"
+                name="ShouldIFish App"
+                link="#"
+                techused={["Next.js", "Python", "Firebase"]}
+                description={[
+                  "Independently developed a full-stack web application that utilises marine API data to predict daily fishing activity using a custom-built algorithm.",
+                  "Implemented a Next.js frontend deployed on Vercel and a Python-based backend hosted on Firebase serverless infrastructure.",
+                ]}
+              />
+
+              <ProjectCard
+                logo="https://i.ibb.co/Np6VBHh/dwa.jpg"
+                name="Coders for Causes – Winter Volunteer Project"
+                link="https://codersforcauses.org/"
+                techused={["Django", "Next.js"]}
+                description={[
+                  "Collaborated with a team of 20 university students to build an event management system for an environmental nonprofit.",
+                  "Developed frontend and backend components, including the navigation bar, create-event page, and JWT authentication endpoint.",
+                ]}
+              />
+
+              <ProjectCard
+                logo="work here"
+                name="Financial Market Analyzer"
+                link="#"
+                techused={["React", "News API", "Stock API", "ChatGPT"]}
+                description={[
+                  "Individually created a web app that uses News and Stock APIs to generate a market summary via ChatGPT.",
+                  "Purchased a custom domain and deployed the application on DigitalOcean.",
+                  "Built to better understand financial metrics such as the S&P 500 and explore applications of AI.",
+                ]}
+              />
+
             </div>
           </div>
-          <p >
-            <a href="https://to-do-lists-eta.vercel.app/" target="_blank">
-              <h3 className="padding" style={{color: 'black'}}>➜ To do list app (Full stack)</h3>
-            </a>
-            <ul>
-              <li>tech used: nextjs. firebase, tailwind css</li>
-              <li><a href="https://github.com/jasonkeo/ToDoList" target="_blank">https://github.com/jasonkeo/ToDoList</a></li>
-              
-              
-
-            </ul>
-          </p>
-
-          {/* <p>
-            <a href="https://showcase-cyan-six.vercel.app" target="_blank">
-              <h3 className="padding" style={{color: 'black'}}>➜ Murdoch badminton club website (Front-end)</h3>
-            </a>
-            <ul>
-              <li>hypothetical website for uni club made with typescript and tailwind css for practice</li>
-            </ul>
-          </p> */}
 
 
-<p>
-            <a href="https://cassa.au" target="_blank">
-              <h3 className="padding" style={{color: 'black'}}>➜ CASSA website revamp (Front-end)</h3>
-            </a>
-            <ul>
-              <li>improved club website by adding new content using html and css
-              
-              <ul><li>new about us, sponsors and join our comittee sections on homepage</li>
-              <li>discord and join membership buttons</li>
-              <li>undlerline hover effect on tabs</li>
-              </ul>
-              </li>
-
-            </ul>
-          </p>
-          
 
 
-        </div>
-      )}
-    </div>
+        )}
+      </div>
     </div >
   );
 }
