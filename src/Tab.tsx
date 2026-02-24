@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import { text } from 'stream/consumers';
 import ExperienceCard from "./Experience";
 import ProjectCard from "./ProjectCard";
+import { resolveModuleName } from 'typescript';
 
 export default function Tabs() {
   const [activeTab, setActiveTab] = useState('experience');
@@ -29,7 +30,14 @@ export default function Tabs() {
           </td>
           <td>
             <button id="tab">
-              <a style={{ textDecoration: "none", color: "black" }} href="/resume.pdf" download="resume.pdf">
+              <a
+                href="resume.pdf"
+
+                download="resume.pdf"
+
+                rel="noopener noreferrer"
+                style={{ textDecoration: "none", color: "black" }}
+              >
                 Resume
               </a>
             </button>
