@@ -2,8 +2,8 @@ import React from 'react';
 import Typing from './Typing';
 
 export default function Left() {
- 
-  
+
+
   return (
     <div className="left">
       <div className="profile round">
@@ -45,7 +45,7 @@ export default function Left() {
         <h1>Skills</h1>
 
         <div className="skills-grid">
-        
+
           <div><p>Python</p></div>
           <div><p>HTML</p></div>
           <div><p>CSS</p></div>
@@ -53,7 +53,7 @@ export default function Left() {
           <div><p>React</p></div>
           <div><p>Django</p></div>
         </div>
-     
+
 
 
       </div>

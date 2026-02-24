@@ -6,7 +6,7 @@ async function sleep(ms: number) {
   return new Promise((r) => setTimeout(r, ms));
 
 
-  
+
 }
 
 function Typing() {
@@ -15,7 +15,7 @@ function Typing() {
   const [cursor, setCursor] = useState("|");
   const [checkblink, setCheckblink] = useState(0);
 
-  
+
   const [wait, setWait] = useState(false);
 
   useEffect(() => {
@@ -26,20 +26,20 @@ function Typing() {
   }, []);
 
   useEffect(() => {
-    if(wait) {
+    if (wait) {
       const timeoutId = setTimeout(() => {
         setText(fullText.slice(0, text.length + 1));
       }, 90); // Change delay as needed
 
       return () => clearTimeout(timeoutId); // Clean up timeout
     }
-  }, [text,wait]);
+  }, [text, wait]);
 
 
 
-  
-  
-  
+
+
+
   useEffect(() => {
     if (wait) {
       const intervalId = setInterval(() => {
@@ -50,15 +50,15 @@ function Typing() {
           setCursor((prevCursor: string) => prevCursor === "" ? "" : "");
         }
       }, 600); // Change blink rate as needed
-  
-      return () => {clearInterval(intervalId)}; // Clean up interval
+
+      return () => { clearInterval(intervalId) }; // Clean up interval
     }
   });
 
   return (
     <div id="inner-box">
-      
-     {text}
+
+      {text}
       <span>{cursor}</span>
     </div>
   );

@@ -29,9 +29,9 @@ export default function Tabs() {
           </td>
           <td>
             <button id="tab">
-            <a style={{textDecoration: "none", color: "black"}} href="/resume.pdf" download="resume.pdf">
-              Resume
-            </a>
+              <a style={{ textDecoration: "none", color: "black" }} href="/resume.pdf" download="resume.pdf">
+                Resume
+              </a>
             </button>
           </td>
         </tr>
@@ -44,9 +44,9 @@ export default function Tabs() {
 
 
             <ExperienceCard
-              logo="work here"
+              logo="https://media.licdn.com/dms/image/v2/C510BAQG5R7t4mGxQVw/company-logo_200_200/company-logo_200_200/0/1631355658488?e=2147483647&v=beta&t=S8v4NQ3ubwPN3jr5wbzdijPcSCZQYwkJkyJLYjIw-xo"
               name="Western Australian University Consultant"
-              link="#"
+              link="https://www.wauc.org.au/"
               date="Feb 2025 – Dec 2025"
               location="Perth"
               role="Student Consultant"
@@ -57,9 +57,9 @@ export default function Tabs() {
             />
 
             <ExperienceCard
-              logo="work here"
+              logo="https://clubs.ecuguild.org.au/wp-content/uploads/2023/08/LOGO_Con_2-2.png"
               name="Computer and Security Student Association"
-              link="#"
+              link="https://cassa.au"
               date="Feb 2024 – Feb 2025"
               location="Perth"
               role="Marketing Coordinator"
@@ -70,7 +70,7 @@ export default function Tabs() {
             />
 
             <ExperienceCard
-              logo="work here"
+              logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQGEBP8cAo-acxoy8tkBLhsD-kB_pUJYJHTA&s"
               name="After School Teacher – Code Camp"
               link="#"
               date="Jul 2024 – Dec 2024"
@@ -93,7 +93,7 @@ export default function Tabs() {
             <h1 className="padding">Projects</h1>
             <div id="experience">
               <ProjectCard
-                logo="work here"
+                logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkv5BWG9YrBQyHShJcaCduRzlUWKBuAIVHKQ&s"
                 name="ShouldIFish App"
                 link="#"
                 techused={["Next.js", "Python", "Firebase"]}
@@ -115,7 +115,7 @@ export default function Tabs() {
               />
 
               <ProjectCard
-                logo="work here"
+                logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkv5BWG9YrBQyHShJcaCduRzlUWKBuAIVHKQ&s"
                 name="Financial Market Analyzer"
                 link="#"
                 techused={["React", "News API", "Stock API", "ChatGPT"]}

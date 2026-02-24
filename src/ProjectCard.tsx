@@ -1,5 +1,5 @@
 interface ProjectCardProps {
-    logo?: string;
+    logo: string;
     name: string;
     link: string
     description: string[];
@@ -7,7 +7,7 @@ interface ProjectCardProps {
 }
 
 export default function ProjectCard({
-    logo, // optional
+    logo,
     name,
     link,
     description,
@@ -33,7 +33,7 @@ export default function ProjectCard({
             <ul>
                 {description.map((item, index) => (
                     <li key={index}>
-                        {item}
+                {item}
                     </li>
                 ))}
             </ul>

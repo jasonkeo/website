@@ -10,17 +10,17 @@ export function Right() {
                 <h1> About me </h1>
                 <p> Software engineering student from Perth, WA.
                     Currently completing a bachelors of Computer science at <a href="https://www.ecu.edu.au/">Edith Cowan University. </a>
-                     In my free time I also enjoy playing games and watching movies.</p>
+                    In my free time I also enjoy playing games and watching movies.</p>
 
                 <div className="about-img">
-                
-                <a target="_blank" href="https://www.linkedin.com/in/jason-keo-0b33ba224/"><img src="linkedin.png" /></a>
-                <a target="_blank" href="https://www.instagram.com/jasonkeoo/"><img src="instagram.png" /></a>
-                <a target="_blank" href="https://github.com/jasonkeo/"><img src="github.png" /></a>
-                
+
+                    <a target="_blank" href="https://www.linkedin.com/in/jason-keo-0b33ba224/"><img src="linkedin.png" /></a>
+                    <a target="_blank" href="https://www.instagram.com/jasonkeoo/"><img src="instagram.png" /></a>
+                    <a target="_blank" href="https://github.com/jasonkeo/"><img src="github.png" /></a>
 
 
-                
+
+
                 </div>
             </div>
 

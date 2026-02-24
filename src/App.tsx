@@ -6,7 +6,7 @@ import { Right } from './Right';
 
 import './index.css';
 
-import './script.js'; 
+import './script.js';
 
 export default function App() {
   return (
@@ -20,21 +20,21 @@ export default function App() {
         <Left></Left>
         <Right></Right>
 
-        
+
 
 
       </div>
 
 
       <div className="footer">
-    
-        
-         Made by Jason Keo. All rights reserved. © <a href="https://github.com/jasonkeo/website">Source Code</a>
-         
+
+
+        Made by Jason Keo. All rights reserved. © <a href="https://github.com/jasonkeo/website">Source Code</a>
+
       </div>
     </main>
 
-    
+
 
   );
 }
